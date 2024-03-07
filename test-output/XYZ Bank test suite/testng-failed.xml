@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [XYZ Bank test suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.xyz.qa.ExtentReportListner.ExtentReportListner"/>
+  </listeners>
+  <test name="XYZ Bank testcases(failed)">
+    <classes>
+      <class name="com.xyz.qa.Testcases.AddCustomerTest">
+        <methods>
+          <include name="addcustomerwithblankData"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.xyz.qa.Testcases.AddCustomerTest -->
+    </classes>
+  </test> <!-- XYZ Bank testcases(failed) -->
+</suite> <!-- Failed suite [XYZ Bank test suite] -->
