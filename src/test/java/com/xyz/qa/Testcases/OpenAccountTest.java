@@ -70,6 +70,7 @@ public class OpenAccountTest extends TestBase{
 	public void InvalidopenAccountwithblank()
 	{
 		managerOpenAccount.process();
+		Assert.assertTrue(managerOpenAccount.isCurrencySelected(), "No field is there");
 	}
 	
 	

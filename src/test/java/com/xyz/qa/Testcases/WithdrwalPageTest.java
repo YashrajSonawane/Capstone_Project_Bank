@@ -40,32 +40,27 @@ public class WithdrwalPageTest extends TestBase {
 		Assert.assertEquals(title,"XYZ Bank");
 	}
 	@Test(priority=2)
-	public void checkbalencebefore()
-	{
-		customerWithdraw.checkbalence();
-	}
-	@Test(priority=3)
 	public void WithdrawValidAmt()
 	{
 		customerWithdraw.Withdraw(prop.getProperty("wValid"));
 		
 		Assert.assertTrue(customerWithdraw.isadded(),"Amount not added");
 	}
-	@Test(priority=4)
+	@Test(priority=3)
 	public void DepositNegativeAmt()
 	{
 		customerWithdraw.Withdraw(prop.getProperty("wNegative"));
 		
-		Assert.assertTrue(customerWithdraw.isadded(),"Amount not added");
+		Assert.assertFalse(customerWithdraw.isadded(),"Amount not added");
 	}
-	@Test(priority=5)
+	@Test(priority=4)
 	public void DepositZeroAmt()
 	{
 		customerWithdraw.Withdraw(prop.getProperty("wZero"));
 		
-		Assert.assertTrue(customerWithdraw.isadded(),"Amount not added");
+		Assert.assertFalse(customerWithdraw.isadded(),"Amount not added");
 	}
-	@Test(priority=6)
+	@Test(priority=5)
 	public void DepositBlankAmt()
 	{
 		customerWithdraw.Withdraw(prop.getProperty("wBlank"));
@@ -78,11 +73,6 @@ public class WithdrwalPageTest extends TestBase {
 		customerWithdraw.Withdraw(prop.getProperty("wtenraisetopow"));
 		
 		Assert.assertTrue(customerWithdraw.isadded(),"Amount not added");
-	}
-	@Test(priority=8)
-	public void checkbalenceafter()
-	{
-		customerWithdraw.checkbalence();
 	}
 	
 	@AfterMethod

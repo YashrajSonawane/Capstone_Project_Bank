@@ -54,6 +54,16 @@ public class TransactionsPage extends TestBase{
 		
 		return new CustomerHomePage();
 	}
+	
+	public boolean isResetButtonLocated()
+	{
+		return ResetBtn.isDisplayed();
+	}
+	
+	public boolean isSortingDone()
+	{
+		return sortUsingDateTime.isDisplayed();
+	}
 
 	
 	

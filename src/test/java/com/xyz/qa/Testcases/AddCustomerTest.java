@@ -59,10 +59,9 @@ public class AddCustomerTest extends TestBase{
 		managerAdd.add(prop.getProperty("FirstnameInvalid"),prop.getProperty("LastnameInvalid"), 
 				prop.getProperty("PostcodeInvalid"));
 		
-		Assert.assertTrue(managerAdd.isFirstNameAdded(), "First name is not displayed");
-		Assert.assertTrue(managerAdd.isLastNameAdded(), "Last name is not displayed");
-        Assert.assertTrue(managerAdd.isPostCodeAdded(), "Postcode is not displayed");
-        System.out.println("*******Invalid Data added*******");
+		Assert.assertFalse(managerAdd.isFirstNameAdded(), "First name should not be added with invalid data");
+        Assert.assertFalse(managerAdd.isLastNameAdded(), "Last name should not be added with invalid data");
+        Assert.assertFalse(managerAdd.isPostCodeAdded(), "Postcode should not be added with invalid data");
 //		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 //		String screenshotLocation = "C:\\Users\\Lenovo\\eclipse-workspace\\Captone_xyzbank\\Screenshots";
 		
@@ -74,10 +73,9 @@ public class AddCustomerTest extends TestBase{
 		managerAdd.add(prop.getProperty("FirstnameBlank"),prop.getProperty("LastnameBlank"), 
 				prop.getProperty("Postcode"));
 		
-		Assert.assertTrue(managerAdd.isFirstNameAdded(), "First name is not displayed");
-		Assert.assertTrue(managerAdd.isLastNameAdded(), "Last name is not displayed");
-        Assert.assertTrue(managerAdd.isPostCodeAdded(), "Postcode is not displayed");
-        System.out.println("*******Blank Data added*******");
+		Assert.assertFalse(managerAdd.isFirstNameAdded(), "First name is not displayed");
+		Assert.assertFalse(managerAdd.isLastNameAdded(), "Last name is not displayed");
+        Assert.assertFalse(managerAdd.isPostCodeAdded(), "Postcode is not displayed");
 	}
 	
 	@AfterMethod

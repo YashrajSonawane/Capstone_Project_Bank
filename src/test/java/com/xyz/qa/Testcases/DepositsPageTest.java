@@ -1,5 +1,6 @@
 package com.xyz.qa.Testcases;
 
+
 import org.testng.Assert;
 
 import org.testng.annotations.AfterMethod;
@@ -40,51 +41,41 @@ public class DepositsPageTest extends TestBase{
 		String title = customerDeposit.validateDepositsPageTitle();
 		Assert.assertEquals(title,"XYZ Bank");
 	}
-	@Test(priority=2)
-	public void checkbalencebefore()
-	{
-		customerDeposit.checkbalence();
-	}
 	
-	@Test(priority=3)
+	@Test(priority=2)
 	public void DepositValidAmt()
 	{
 		customerDeposit.Deposit(prop.getProperty("nValid"));
 		
 		Assert.assertTrue(customerDeposit.isadded(),"Amount not added");
 	}
-	@Test(priority=4)
+	@Test(priority=3)
 	public void DepositNegativeAmt()
 	{
 		customerDeposit.Deposit(prop.getProperty("nNegative"));
 		
-		Assert.assertTrue(customerDeposit.isadded(),"Amount not added");
+		Assert.assertFalse(customerDeposit.isadded(),"Amount not added");
 	}
-	@Test(priority=5)
+	@Test(priority=4)
 	public void DepositZeroAmt()
 	{
 		customerDeposit.Deposit(prop.getProperty("nZero"));
 		
-		Assert.assertTrue(customerDeposit.isadded(),"Amount not added");
+		Assert.assertFalse(customerDeposit.isadded(),"Amount not added");
 	}
-	@Test(priority=6)
+	@Test(priority=5)
 	public void DepositBlankAmt()
 	{
 		customerDeposit.Deposit(prop.getProperty("nBlank"));
 		
 		Assert.assertTrue(customerDeposit.isadded(),"Amount not added");
 	}
-	@Test(priority=7)
+	@Test(priority=6)
 	public void DeposittenraisetopowAmt()
 	{
 		customerDeposit.Deposit(prop.getProperty("ntenraisetopow"));
 		
 		Assert.assertTrue(customerDeposit.isadded(),"Amount not added");
-	}
-	@Test(priority=8)
-	public void checkbalenceafter()
-	{
-		customerDeposit.checkbalence();
 	}
 	
 	@AfterMethod

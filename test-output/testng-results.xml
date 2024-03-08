@@ -1,51 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+<testng-results ignored="0" total="52" passed="44" failed="8" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-07T05:35:16Z" name="Default suite" finished-at="2024-03-07T05:37:04Z" duration-ms="107685">
+  <suite started-at="2024-03-07T18:51:37Z" name="XYZ Bank test suite" finished-at="2024-03-07T19:02:16Z" duration-ms="638464">
     <groups>
     </groups>
-    <test started-at="2024-03-07T05:35:16Z" name="Default test" finished-at="2024-03-07T05:37:04Z" duration-ms="107685">
-      <class name="com.xyz.qa.Testcases.AddCustomerTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@37e4d7bb]" started-at="2024-03-07T11:05:16Z" name="setUp" finished-at="2024-03-07T11:05:25Z" duration-ms="8898" status="PASS">
+    <test started-at="2024-03-07T18:51:37Z" name="chromeTest" finished-at="2024-03-07T19:02:16Z" duration-ms="638464">
+      <class name="com.xyz.qa.Testcases.TransactionsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:23:13Z" name="setUp" finished-at="2024-03-08T00:23:24Z" duration-ms="10825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addcustomerwithvalidData()[pri:1, instance:com.xyz.qa.Testcases.AddCustomerTest@37e4d7bb]" started-at="2024-03-07T11:05:25Z" name="addcustomerwithvalidData" finished-at="2024-03-07T11:05:26Z" duration-ms="1044" status="PASS">
+        <test-method signature="BankManagerHomeTitleTest()[pri:1, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:23:24Z" name="BankManagerHomeTitleTest" finished-at="2024-03-08T00:23:24Z" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addcustomerwithvalidData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@37e4d7bb]" started-at="2024-03-07T11:05:26Z" name="tearDown" finished-at="2024-03-07T11:05:27Z" duration-ms="953" status="PASS">
+        </test-method> <!-- BankManagerHomeTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:23:24Z" name="tearDown" finished-at="2024-03-08T00:23:25Z" duration-ms="1170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@37e4d7bb]" started-at="2024-03-07T11:05:27Z" name="setUp" finished-at="2024-03-07T11:05:33Z" duration-ms="5430" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:27:33Z" name="setUp" finished-at="2024-03-08T00:27:40Z" duration-ms="7186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addcustomerwithInvalidData()[pri:2, instance:com.xyz.qa.Testcases.AddCustomerTest@37e4d7bb]" started-at="2024-03-07T11:05:33Z" name="addcustomerwithInvalidData" finished-at="2024-03-07T11:06:14Z" duration-ms="40968" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="sortTransaction()[pri:2, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:27:40Z" name="sortTransaction" finished-at="2024-03-08T00:27:40Z" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortTransaction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:27:40Z" name="tearDown" finished-at="2024-03-08T00:27:42Z" duration-ms="1342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:29:06Z" name="setUp" finished-at="2024-03-08T00:29:15Z" duration-ms="9088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ResetTransaction()[pri:3, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:29:15Z" name="ResetTransaction" finished-at="2024-03-08T00:29:35Z" duration-ms="20372" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='errormessage']"}
+              <![CDATA[element not interactable
   (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-JPVJA3L', ip: '192.168.31.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed385252913da8f0f77e1aa2cb2abec3
-*** Element info: {Using=name, value=errormessage}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60895}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9ffed0c1f3e587e9b5645807f5490fb]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='errormessage']"}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-JPVJA3L', ip: '192.168.31.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ed385252913da8f0f77e1aa2cb2abec3
-*** Element info: {Using=name, value=errormessage}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60895}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9ffed0c1f3e587e9b5645807f5490fb
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -57,16 +65,15 @@ Session ID: ed385252913da8f0f77e1aa2cb2abec3
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at com.xyz.qa.pages.AddCustomerPage.isErrorMessageDisplayed(AddCustomerPage.java:76)
-	at com.xyz.qa.Testcases.AddCustomerTest.addcustomerwithInvalidData(AddCustomerTest.java:58)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.xyz.qa.pages.TransactionsPage.clickReset(TransactionsPage.java:48)
+	at com.xyz.qa.Testcases.TransactionsPageTest.ResetTransaction(TransactionsPageTest.java:53)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,76 +87,824 @@ Session ID: ed385252913da8f0f77e1aa2cb2abec3
 	at org.testng.TestRunner.privateRun(TestRunner.java:744)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ResetTransaction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:29:35Z" name="tearDown" finished-at="2024-03-08T00:29:36Z" duration-ms="848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:30:20Z" name="setUp" finished-at="2024-03-08T00:30:27Z" duration-ms="7536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="BackTransaction()[pri:4, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:30:27Z" name="BackTransaction" finished-at="2024-03-08T00:30:27Z" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BackTransaction -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.TransactionsPageTest@44821a96]" started-at="2024-03-08T00:30:27Z" name="tearDown" finished-at="2024-03-08T00:30:28Z" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.xyz.qa.Testcases.TransactionsPageTest -->
+      <class name="com.xyz.qa.Testcases.CustomerHomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:22:47Z" name="setUp" finished-at="2024-03-08T00:22:53Z" duration-ms="6094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CustomerHomeTitleTest()[pri:1, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:22:53Z" name="CustomerHomeTitleTest" finished-at="2024-03-08T00:22:53Z" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerHomeTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:22:53Z" name="tearDown" finished-at="2024-03-08T00:22:54Z" duration-ms="825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:25:32Z" name="setUp" finished-at="2024-03-08T00:26:05Z" duration-ms="32326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CustomerNameTest()[pri:2, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:26:05Z" name="CustomerNameTest" finished-at="2024-03-08T00:26:05Z" duration-ms="533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerNameTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:26:05Z" name="tearDown" finished-at="2024-03-08T00:26:13Z" duration-ms="8286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:28:31Z" name="setUp" finished-at="2024-03-08T00:28:39Z" duration-ms="8875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AccountNumberTest()[pri:3, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:28:39Z" name="AccountNumberTest" finished-at="2024-03-08T00:28:40Z" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccountNumberTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:28:40Z" name="tearDown" finished-at="2024-03-08T00:28:43Z" duration-ms="3060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:29:57Z" name="setUp" finished-at="2024-03-08T00:30:03Z" duration-ms="6265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TransactionBtn()[pri:4, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:30:03Z" name="TransactionBtn" finished-at="2024-03-08T00:30:04Z" duration-ms="416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TransactionBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:30:04Z" name="tearDown" finished-at="2024-03-08T00:30:04Z" duration-ms="734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:30:43Z" name="setUp" finished-at="2024-03-08T00:30:52Z" duration-ms="9088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DepositBtn()[pri:5, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:30:52Z" name="DepositBtn" finished-at="2024-03-08T00:30:52Z" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:30:52Z" name="tearDown" finished-at="2024-03-08T00:30:53Z" duration-ms="886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:31:29Z" name="setUp" finished-at="2024-03-08T00:31:34Z" duration-ms="5126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="WithdrawalBtn()[pri:6, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:31:34Z" name="WithdrawalBtn" finished-at="2024-03-08T00:31:34Z" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WithdrawalBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerHomePageTest@41e1e210]" started-at="2024-03-08T00:31:34Z" name="tearDown" finished-at="2024-03-08T00:31:35Z" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.xyz.qa.Testcases.CustomerHomePageTest -->
+      <class name="com.xyz.qa.Testcases.ManagerLogoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.ManagerLogoutTest@2f8dad04]" started-at="2024-03-08T00:22:33Z" name="setUp" finished-at="2024-03-08T00:22:38Z" duration-ms="5831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="BankManagerHomeTitleTest()[pri:1, instance:com.xyz.qa.Testcases.ManagerLogoutTest@2f8dad04]" started-at="2024-03-08T00:22:38Z" name="BankManagerHomeTitleTest" finished-at="2024-03-08T00:22:39Z" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BankManagerHomeTitleTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.ManagerLogoutTest@2f8dad04]" started-at="2024-03-08T00:24:18Z" name="setUp" finished-at="2024-03-08T00:24:30Z" duration-ms="12237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="LogoutTest()[pri:2, instance:com.xyz.qa.Testcases.ManagerLogoutTest@2f8dad04]" started-at="2024-03-08T00:24:30Z" name="LogoutTest" finished-at="2024-03-08T00:24:30Z" duration-ms="127" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Button Not Found expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Button Not Found expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertFalse(Assert.java:62)
+	at com.xyz.qa.Testcases.ManagerLogoutTest.LogoutTest(ManagerLogoutTest.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutTest -->
+      </class> <!-- com.xyz.qa.Testcases.ManagerLogoutTest -->
+      <class name="com.xyz.qa.Testcases.CustomerLoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerLoginPageTest@29e495ff]" started-at="2024-03-08T00:22:39Z" name="setUp" finished-at="2024-03-08T00:22:46Z" duration-ms="7617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CustomerLoginTitleTest()[pri:1, instance:com.xyz.qa.Testcases.CustomerLoginPageTest@29e495ff]" started-at="2024-03-08T00:22:46Z" name="CustomerLoginTitleTest" finished-at="2024-03-08T00:22:46Z" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerLoginTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerLoginPageTest@29e495ff]" started-at="2024-03-08T00:22:46Z" name="tearDown" finished-at="2024-03-08T00:22:47Z" duration-ms="1086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerLoginPageTest@29e495ff]" started-at="2024-03-08T00:24:30Z" name="setUp" finished-at="2024-03-08T00:25:25Z" duration-ms="54920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="xyzLogoTest()[pri:2, instance:com.xyz.qa.Testcases.CustomerLoginPageTest@29e495ff]" started-at="2024-03-08T00:25:25Z" name="xyzLogoTest" finished-at="2024-03-08T00:25:25Z" duration-ms="572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xyzLogoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerLoginPageTest@29e495ff]" started-at="2024-03-08T00:25:25Z" name="tearDown" finished-at="2024-03-08T00:25:32Z" duration-ms="6744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerLoginPageTest@29e495ff]" started-at="2024-03-08T00:28:23Z" name="setUp" finished-at="2024-03-08T00:28:28Z" duration-ms="5392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="CustomerLoginTest()[pri:3, instance:com.xyz.qa.Testcases.CustomerLoginPageTest@29e495ff]" started-at="2024-03-08T00:28:28Z" name="CustomerLoginTest" finished-at="2024-03-08T00:28:29Z" duration-ms="1106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerLoginPageTest@29e495ff]" started-at="2024-03-08T00:28:29Z" name="tearDown" finished-at="2024-03-08T00:28:31Z" duration-ms="1268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.xyz.qa.Testcases.CustomerLoginPageTest -->
+      <class name="com.xyz.qa.Testcases.DepositsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:22:54Z" name="setUp" finished-at="2024-03-08T00:23:03Z" duration-ms="8894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="BankManagerHomeTitleTest()[pri:1, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:23:03Z" name="BankManagerHomeTitleTest" finished-at="2024-03-08T00:23:03Z" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BankManagerHomeTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:23:03Z" name="tearDown" finished-at="2024-03-08T00:23:04Z" duration-ms="1114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:26:13Z" name="setUp" finished-at="2024-03-08T00:26:43Z" duration-ms="30058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DepositValidAmt()[pri:2, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:26:43Z" name="DepositValidAmt" finished-at="2024-03-08T00:26:48Z" duration-ms="5037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositValidAmt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:26:48Z" name="tearDown" finished-at="2024-03-08T00:27:18Z" duration-ms="29598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:28:43Z" name="setUp" finished-at="2024-03-08T00:28:54Z" duration-ms="11172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DepositNegativeAmt()[pri:3, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:28:54Z" name="DepositNegativeAmt" finished-at="2024-03-08T00:28:55Z" duration-ms="487" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Amount not added expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Amount not added expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertFalse(Assert.java:62)
+	at com.xyz.qa.Testcases.DepositsPageTest.DepositNegativeAmt(DepositsPageTest.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositNegativeAmt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:28:55Z" name="tearDown" finished-at="2024-03-08T00:28:58Z" duration-ms="2980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:30:04Z" name="setUp" finished-at="2024-03-08T00:30:11Z" duration-ms="6432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DepositZeroAmt()[pri:4, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:30:11Z" name="DepositZeroAmt" finished-at="2024-03-08T00:30:11Z" duration-ms="473" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Amount not added expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Amount not added expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertFalse(Assert.java:62)
+	at com.xyz.qa.Testcases.DepositsPageTest.DepositZeroAmt(DepositsPageTest.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositZeroAmt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:30:11Z" name="tearDown" finished-at="2024-03-08T00:30:12Z" duration-ms="674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:30:53Z" name="setUp" finished-at="2024-03-08T00:31:03Z" duration-ms="9525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DepositBlankAmt()[pri:5, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:31:03Z" name="DepositBlankAmt" finished-at="2024-03-08T00:31:03Z" duration-ms="497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositBlankAmt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:31:03Z" name="tearDown" finished-at="2024-03-08T00:31:04Z" duration-ms="849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:31:35Z" name="setUp" finished-at="2024-03-08T00:31:42Z" duration-ms="7176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DeposittenraisetopowAmt()[pri:6, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:31:42Z" name="DeposittenraisetopowAmt" finished-at="2024-03-08T00:31:43Z" duration-ms="482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeposittenraisetopowAmt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.DepositsPageTest@be35cd9]" started-at="2024-03-08T00:31:43Z" name="tearDown" finished-at="2024-03-08T00:31:44Z" duration-ms="882" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.xyz.qa.Testcases.DepositsPageTest -->
+      <class name="com.xyz.qa.Testcases.CustomerPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:22:26Z" name="setUp" finished-at="2024-03-08T00:22:32Z" duration-ms="5798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="OpenAccountTitleTest()[pri:1, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:22:32Z" name="OpenAccountTitleTest" finished-at="2024-03-08T00:22:32Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAccountTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:22:32Z" name="tearDown" finished-at="2024-03-08T00:22:33Z" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:24:08Z" name="setUp" finished-at="2024-03-08T00:24:16Z" duration-ms="8471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchCustomerusingfirstName()[pri:2, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:24:16Z" name="searchCustomerusingfirstName" finished-at="2024-03-08T00:24:17Z" duration-ms="544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCustomerusingfirstName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:24:17Z" name="tearDown" finished-at="2024-03-08T00:24:18Z" duration-ms="839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:28:16Z" name="setUp" finished-at="2024-03-08T00:28:21Z" duration-ms="5565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchCustomerusingLastName()[pri:3, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:28:21Z" name="searchCustomerusingLastName" finished-at="2024-03-08T00:28:22Z" duration-ms="642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCustomerusingLastName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:28:22Z" name="tearDown" finished-at="2024-03-08T00:28:23Z" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:29:51Z" name="setUp" finished-at="2024-03-08T00:29:56Z" duration-ms="5201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchCustomerusingPostCode()[pri:4, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:29:56Z" name="searchCustomerusingPostCode" finished-at="2024-03-08T00:29:56Z" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCustomerusingPostCode -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:29:56Z" name="tearDown" finished-at="2024-03-08T00:29:57Z" duration-ms="713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:30:36Z" name="setUp" finished-at="2024-03-08T00:30:42Z" duration-ms="6093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchCustomerusingAccNumber()[pri:5, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:30:42Z" name="searchCustomerusingAccNumber" finished-at="2024-03-08T00:30:42Z" duration-ms="476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCustomerusingAccNumber -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:30:42Z" name="tearDown" finished-at="2024-03-08T00:30:43Z" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:31:16Z" name="setUp" finished-at="2024-03-08T00:31:28Z" duration-ms="11364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DeleteSearchedCustomer()[pri:6, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:31:28Z" name="DeleteSearchedCustomer" finished-at="2024-03-08T00:31:28Z" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteSearchedCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:31:28Z" name="tearDown" finished-at="2024-03-08T00:31:29Z" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:31:44Z" name="setUp" finished-at="2024-03-08T00:31:50Z" duration-ms="6579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SortingUsingFirstName()[pri:7, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:31:50Z" name="SortingUsingFirstName" finished-at="2024-03-08T00:31:50Z" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortingUsingFirstName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:31:50Z" name="tearDown" finished-at="2024-03-08T00:31:51Z" duration-ms="789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:32:00Z" name="setUp" finished-at="2024-03-08T00:32:07Z" duration-ms="7143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SortingUsingLastName()[pri:8, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:32:07Z" name="SortingUsingLastName" finished-at="2024-03-08T00:32:08Z" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortingUsingLastName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:32:08Z" name="tearDown" finished-at="2024-03-08T00:32:09Z" duration-ms="1013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:32:09Z" name="setUp" finished-at="2024-03-08T00:32:15Z" duration-ms="6133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SortingUsingpost()[pri:9, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:32:15Z" name="SortingUsingpost" finished-at="2024-03-08T00:32:15Z" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortingUsingpost -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.CustomerPageTest@2bfc268b]" started-at="2024-03-08T00:32:15Z" name="tearDown" finished-at="2024-03-08T00:32:16Z" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.xyz.qa.Testcases.CustomerPageTest -->
+      <class name="com.xyz.qa.Testcases.BankManagerLoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.BankManagerLoginPageTest@5fd4f8f5]" started-at="2024-03-08T00:21:37Z" name="setUp" finished-at="2024-03-08T00:21:58Z" duration-ms="20864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="BankManagerLoginTitleTest()[pri:1, instance:com.xyz.qa.Testcases.BankManagerLoginPageTest@5fd4f8f5]" started-at="2024-03-08T00:21:58Z" name="BankManagerLoginTitleTest" finished-at="2024-03-08T00:21:58Z" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BankManagerLoginTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.BankManagerLoginPageTest@5fd4f8f5]" started-at="2024-03-08T00:21:58Z" name="tearDown" finished-at="2024-03-08T00:21:59Z" duration-ms="826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.BankManagerLoginPageTest@5fd4f8f5]" started-at="2024-03-08T00:23:25Z" name="setUp" finished-at="2024-03-08T00:23:30Z" duration-ms="4662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="xyzLogoTest()[pri:2, instance:com.xyz.qa.Testcases.BankManagerLoginPageTest@5fd4f8f5]" started-at="2024-03-08T00:23:30Z" name="xyzLogoTest" finished-at="2024-03-08T00:23:31Z" duration-ms="594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- xyzLogoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.BankManagerLoginPageTest@5fd4f8f5]" started-at="2024-03-08T00:23:31Z" name="tearDown" finished-at="2024-03-08T00:23:31Z" duration-ms="689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.BankManagerLoginPageTest@5fd4f8f5]" started-at="2024-03-08T00:27:42Z" name="setUp" finished-at="2024-03-08T00:27:48Z" duration-ms="6815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ManagerLoginTest()[pri:3, instance:com.xyz.qa.Testcases.BankManagerLoginPageTest@5fd4f8f5]" started-at="2024-03-08T00:27:48Z" name="ManagerLoginTest" finished-at="2024-03-08T00:27:49Z" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ManagerLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.BankManagerLoginPageTest@5fd4f8f5]" started-at="2024-03-08T00:27:49Z" name="tearDown" finished-at="2024-03-08T00:27:50Z" duration-ms="869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.xyz.qa.Testcases.BankManagerLoginPageTest -->
+      <class name="com.xyz.qa.Testcases.OpenAccountTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:22:17Z" name="setUp" finished-at="2024-03-08T00:22:25Z" duration-ms="8157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="OpenAccountTitleTest()[pri:1, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:22:25Z" name="OpenAccountTitleTest" finished-at="2024-03-08T00:22:25Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAccountTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:22:25Z" name="tearDown" finished-at="2024-03-08T00:22:26Z" duration-ms="813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:23:58Z" name="setUp" finished-at="2024-03-08T00:24:06Z" duration-ms="8299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ValidopenAccount()[pri:2, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:24:06Z" name="ValidopenAccount" finished-at="2024-03-08T00:24:07Z" duration-ms="761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidopenAccount -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:24:07Z" name="tearDown" finished-at="2024-03-08T00:24:08Z" duration-ms="811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:28:07Z" name="setUp" finished-at="2024-03-08T00:28:14Z" duration-ms="6321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="InvalidopenAccountwithselectcustomer()[pri:3, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:28:14Z" name="InvalidopenAccountwithselectcustomer" finished-at="2024-03-08T00:28:14Z" duration-ms="581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidopenAccountwithselectcustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:28:14Z" name="tearDown" finished-at="2024-03-08T00:28:16Z" duration-ms="1544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:29:43Z" name="setUp" finished-at="2024-03-08T00:29:49Z" duration-ms="5936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="InvalidopenAccountwithcurrency()[pri:4, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:29:49Z" name="InvalidopenAccountwithcurrency" finished-at="2024-03-08T00:29:50Z" duration-ms="543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidopenAccountwithcurrency -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:29:50Z" name="tearDown" finished-at="2024-03-08T00:29:51Z" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:30:28Z" name="setUp" finished-at="2024-03-08T00:30:35Z" duration-ms="6429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="InvalidopenAccountwithblank()[pri:5, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:30:35Z" name="InvalidopenAccountwithblank" finished-at="2024-03-08T00:30:35Z" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidopenAccountwithblank -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.OpenAccountTest@53976f5c]" started-at="2024-03-08T00:30:35Z" name="tearDown" finished-at="2024-03-08T00:30:36Z" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.xyz.qa.Testcases.OpenAccountTest -->
+      <class name="com.xyz.qa.Testcases.BankManagerHomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:21:59Z" name="setUp" finished-at="2024-03-08T00:22:08Z" duration-ms="8733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="BankManagerHomeTitleTest()[pri:1, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:22:08Z" name="BankManagerHomeTitleTest" finished-at="2024-03-08T00:22:08Z" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BankManagerHomeTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:22:08Z" name="tearDown" finished-at="2024-03-08T00:22:09Z" duration-ms="1239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:23:31Z" name="setUp" finished-at="2024-03-08T00:23:39Z" duration-ms="8095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddCustbtn()[pri:2, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:23:39Z" name="AddCustbtn" finished-at="2024-03-08T00:23:40Z" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCustbtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:23:40Z" name="tearDown" finished-at="2024-03-08T00:23:41Z" duration-ms="1131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:27:50Z" name="setUp" finished-at="2024-03-08T00:27:56Z" duration-ms="5815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="openAccountbtn()[pri:3, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:27:56Z" name="openAccountbtn" finished-at="2024-03-08T00:27:56Z" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountbtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:27:56Z" name="tearDown" finished-at="2024-03-08T00:27:57Z" duration-ms="960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:29:36Z" name="setUp" finished-at="2024-03-08T00:29:42Z" duration-ms="5707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="customerListbtn()[pri:4, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:29:42Z" name="customerListbtn" finished-at="2024-03-08T00:29:42Z" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerListbtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.BankManagerHomePageTest@696da30b]" started-at="2024-03-08T00:29:42Z" name="tearDown" finished-at="2024-03-08T00:29:43Z" duration-ms="1171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.xyz.qa.Testcases.BankManagerHomePageTest -->
+      <class name="com.xyz.qa.Testcases.WithdrwalPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:23:04Z" name="setUp" finished-at="2024-03-08T00:23:13Z" duration-ms="8299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="BankManagerHomeTitleTest()[pri:1, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:23:13Z" name="BankManagerHomeTitleTest" finished-at="2024-03-08T00:23:13Z" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BankManagerHomeTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:23:13Z" name="tearDown" finished-at="2024-03-08T00:23:13Z" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:27:18Z" name="setUp" finished-at="2024-03-08T00:27:30Z" duration-ms="12030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="WithdrawValidAmt()[pri:2, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:27:30Z" name="WithdrawValidAmt" finished-at="2024-03-08T00:27:31Z" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WithdrawValidAmt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:27:31Z" name="tearDown" finished-at="2024-03-08T00:27:33Z" duration-ms="1901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:28:58Z" name="setUp" finished-at="2024-03-08T00:29:05Z" duration-ms="7040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DepositNegativeAmt()[pri:3, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:29:05Z" name="DepositNegativeAmt" finished-at="2024-03-08T00:29:05Z" duration-ms="516" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Amount not added expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Amount not added expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertFalse(Assert.java:62)
+	at com.xyz.qa.Testcases.WithdrwalPageTest.DepositNegativeAmt(WithdrwalPageTest.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositNegativeAmt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:29:05Z" name="tearDown" finished-at="2024-03-08T00:29:06Z" duration-ms="780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:30:12Z" name="setUp" finished-at="2024-03-08T00:30:18Z" duration-ms="6337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DepositZeroAmt()[pri:4, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:30:18Z" name="DepositZeroAmt" finished-at="2024-03-08T00:30:19Z" duration-ms="477" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Amount not added expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Amount not added expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertFalse(Assert.java:62)
+	at com.xyz.qa.Testcases.WithdrwalPageTest.DepositZeroAmt(WithdrwalPageTest.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositZeroAmt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:30:19Z" name="tearDown" finished-at="2024-03-08T00:30:20Z" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:31:04Z" name="setUp" finished-at="2024-03-08T00:31:14Z" duration-ms="10314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DepositBlankAmt()[pri:5, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:31:14Z" name="DepositBlankAmt" finished-at="2024-03-08T00:31:15Z" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DepositBlankAmt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:31:15Z" name="tearDown" finished-at="2024-03-08T00:31:16Z" duration-ms="1156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:31:51Z" name="setUp" finished-at="2024-03-08T00:31:59Z" duration-ms="7411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="DeposittenraisetopowAmt()[pri:7, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:31:59Z" name="DeposittenraisetopowAmt" finished-at="2024-03-08T00:31:59Z" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeposittenraisetopowAmt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.WithdrwalPageTest@4944252c]" started-at="2024-03-08T00:31:59Z" name="tearDown" finished-at="2024-03-08T00:32:00Z" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.xyz.qa.Testcases.WithdrwalPageTest -->
+      <class name="com.xyz.qa.Testcases.AddCustomerTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:22:09Z" name="setUp" finished-at="2024-03-08T00:22:16Z" duration-ms="7061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="AddCustomerTitleTest()[pri:1, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:22:16Z" name="AddCustomerTitleTest" finished-at="2024-03-08T00:22:16Z" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCustomerTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:22:16Z" name="tearDown" finished-at="2024-03-08T00:22:17Z" duration-ms="761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:23:41Z" name="setUp" finished-at="2024-03-08T00:23:49Z" duration-ms="7979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addcustomerwithInvalidData()[pri:2, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:23:49Z" name="addcustomerwithInvalidData" finished-at="2024-03-08T00:23:50Z" duration-ms="1212" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[First name should not be added with invalid data expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: First name should not be added with invalid data expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertFalse(Assert.java:62)
+	at com.xyz.qa.Testcases.AddCustomerTest.addcustomerwithInvalidData(AddCustomerTest.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addcustomerwithInvalidData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@37e4d7bb]" started-at="2024-03-07T11:06:14Z" name="tearDown" finished-at="2024-03-07T11:06:15Z" duration-ms="798" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:23:50Z" name="tearDown" finished-at="2024-03-08T00:23:51Z" duration-ms="770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@37e4d7bb]" started-at="2024-03-07T11:06:15Z" name="setUp" finished-at="2024-03-07T11:06:22Z" duration-ms="7588" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:23:51Z" name="setUp" finished-at="2024-03-08T00:23:56Z" duration-ms="5594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addcustomerwithblankData()[pri:3, instance:com.xyz.qa.Testcases.AddCustomerTest@37e4d7bb]" started-at="2024-03-07T11:06:22Z" name="addcustomerwithblankData" finished-at="2024-03-07T11:07:03Z" duration-ms="41223" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="addcustomerwithvalidData()[pri:2, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:23:56Z" name="addcustomerwithvalidData" finished-at="2024-03-08T00:23:57Z" duration-ms="690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addcustomerwithvalidData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:23:57Z" name="tearDown" finished-at="2024-03-08T00:23:58Z" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:27:57Z" name="setUp" finished-at="2024-03-08T00:28:05Z" duration-ms="7769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addcustomerwithblankData()[pri:3, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:28:05Z" name="addcustomerwithblankData" finished-at="2024-03-08T00:28:06Z" duration-ms="1379" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='errormessage']"}
-  (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-JPVJA3L', ip: '192.168.31.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60624}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3bf59380865caabb3787f900f2c63755
-*** Element info: {Using=name, value=errormessage}]]>
+              <![CDATA[First name is not displayed expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='errormessage']"}
-  (Session info: chrome=122.0.6261.70)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-JPVJA3L', ip: '192.168.31.96', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.70, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60624}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3bf59380865caabb3787f900f2c63755
-*** Element info: {Using=name, value=errormessage}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)
-	at org.openqa.selenium.By$ByName.findElement(By.java:284)
-	at org.openqa.selenium.support.ByIdOrName.findElement(ByIdOrName.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
-	at com.xyz.qa.pages.AddCustomerPage.isErrorMessageDisplayed(AddCustomerPage.java:76)
-	at com.xyz.qa.Testcases.AddCustomerTest.addcustomerwithblankData(AddCustomerTest.java:70)
+              <![CDATA[java.lang.AssertionError: First name is not displayed expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertFalse(Assert.java:62)
+	at com.xyz.qa.Testcases.AddCustomerTest.addcustomerwithblankData(AddCustomerTest.java:76)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -163,29 +918,24 @@ Session ID: 3bf59380865caabb3787f900f2c63755
 	at org.testng.TestRunner.privateRun(TestRunner.java:744)
 	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addcustomerwithblankData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@37e4d7bb]" started-at="2024-03-07T11:07:03Z" name="tearDown" finished-at="2024-03-07T11:07:04Z" duration-ms="747" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xyz.qa.Testcases.AddCustomerTest@4e7912d8]" started-at="2024-03-08T00:28:06Z" name="tearDown" finished-at="2024-03-08T00:28:07Z" duration-ms="1166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.xyz.qa.Testcases.AddCustomerTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- chromeTest -->
+  </suite> <!-- XYZ Bank test suite -->
 </testng-results>

@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [XYZ Bank test suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="3" parallel="tests" name="Failed suite [XYZ Bank test suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.xyz.qa.ExtentReportListner.ExtentReportListner"/>
   </listeners>
-  <test name="XYZ Bank testcases(failed)">
+  <test parallel="tests" name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.xyz.qa.Testcases.AddCustomerTest">
         <methods>
           <include name="addcustomerwithblankData"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="addcustomerwithInvalidData"/>
         </methods>
       </class> <!-- com.xyz.qa.Testcases.AddCustomerTest -->
+      <class name="com.xyz.qa.Testcases.ManagerLogoutTest">
+        <methods>
+          <include name="LogoutTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.xyz.qa.Testcases.ManagerLogoutTest -->
+      <class name="com.xyz.qa.Testcases.TransactionsPageTest">
+        <methods>
+          <include name="ResetTransaction"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.xyz.qa.Testcases.TransactionsPageTest -->
+      <class name="com.xyz.qa.Testcases.WithdrwalPageTest">
+        <methods>
+          <include name="DepositZeroAmt"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="DepositNegativeAmt"/>
+        </methods>
+      </class> <!-- com.xyz.qa.Testcases.WithdrwalPageTest -->
+      <class name="com.xyz.qa.Testcases.DepositsPageTest">
+        <methods>
+          <include name="DepositNegativeAmt"/>
+          <include name="setUp"/>
+          <include name="DepositZeroAmt"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.xyz.qa.Testcases.DepositsPageTest -->
     </classes>
-  </test> <!-- XYZ Bank testcases(failed) -->
+  </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [XYZ Bank test suite] -->

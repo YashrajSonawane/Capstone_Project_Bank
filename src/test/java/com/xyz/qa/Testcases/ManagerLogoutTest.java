@@ -43,6 +43,7 @@ public class ManagerLogoutTest extends TestBase {
 	public void LogoutTest()
 	{
 		managerLogin= managerlogout.Logout();
+		Assert.assertFalse(managerlogout.islogout(),"Button Not Found");
 	}
 
 

@@ -9,6 +9,7 @@
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="addcustomerwithInvalidData"/>
+          <include name="addcustomerwithvalidData"/>
         </methods>
       </class> <!-- com.xyz.qa.Testcases.AddCustomerTest -->
     </classes>

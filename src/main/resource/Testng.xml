@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="XYZ Bank test suite">
+<suite name="XYZ Bank test suite" parallel="tests" thread-count="3">
 	
 	<listeners>
 		<listener class-name="com.xyz.qa.ExtentReportListner.ExtentReportListner"></listener>
 	</listeners>
 	
-    <test name="XYZ Bank testcases">
+    <test name="chromeTest">
+		<parameter name="browser" value="chrome"/>
          <classes>
-             <class name="com.xyz.qa.Testcases.BankManagerLoginPageTest"/>
-   
+			 <class name="com.xyz.qa.Testcases.BankManagerLoginPageTest"/>
+			 <class name="com.xyz.qa.Testcases.BankManagerHomePageTest"/>
+			 <class name="com.xyz.qa.Testcases.AddCustomerTest"/>
+			 <class name="com.xyz.qa.Testcases.OpenAccountTest"/>
+			 <class name="com.xyz.qa.Testcases.CustomerPageTest"/>
+			 <class name="com.xyz.qa.Testcases.ManagerLogoutTest"/>
+			 <class name="com.xyz.qa.Testcases.CustomerLoginPageTest"/>
+			 <class name="com.xyz.qa.Testcases.CustomerHomePageTest"/>
+			 <class name="com.xyz.qa.Testcases.DepositsPageTest"/>
+			 <class name="com.xyz.qa.Testcases.WithdrwalPageTest"/>
+             <class name="com.xyz.qa.Testcases.TransactionsPageTest"/>
           </classes>
-     </test> <!-- Test -->
+     </test>
+     
+   <!--  <test name="FF">
+		<parameter name="browser" value="firefox"/>
+         <classes>
+             <class name="com.xyz.qa.Testcases.DepositsPageTest"/>
+          </classes>
+     </test>
+     
+     <test name="Edge">
+		<parameter name="browser" value="edge"/>
+         <classes>
+             <class name="com.xyz.qa.Testcases.DepositsPageTest"/>
+          </classes>
+     </test> --> 
 </suite> <!-- Suite -->

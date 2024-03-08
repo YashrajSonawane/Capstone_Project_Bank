@@ -21,6 +21,11 @@ public class ManagerLogout extends TestBase {
 		return driver.getTitle();
 	}
 	
+	public boolean islogout()
+	{
+		return Logout.isDisplayed();
+	}
+	
 	public BankManagerLoginPage Logout()
 	{
 		 Logout.click();

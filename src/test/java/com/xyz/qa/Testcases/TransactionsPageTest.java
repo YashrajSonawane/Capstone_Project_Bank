@@ -44,12 +44,15 @@ public class TransactionsPageTest extends TestBase{
 	public void sortTransaction()
 	{
 		customerTransactions.sortusingdatetime();
+		Assert.assertTrue(customerTransactions.isSortingDone(), "Sorting not done");
 	}
 	
 	@Test(priority=3)
 	public void ResetTransaction()
 	{
 		customerTransactions.clickReset();
+		Assert.assertFalse(customerTransactions.isResetButtonLocated(), "Reset button should not be located");
+		
 	}
 	@Test(priority=4)
 	public void BackTransaction()
